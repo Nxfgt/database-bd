@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Data Guru</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.95);
+            padding: 25px 30px;
+            border-radius: 12px;
+            width: 360px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            background: #0d6efd;
+            color: white;
+        }
+
+        .btn-reset {
+            background: #dc3545;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Input Data Guru</h2>
+
+    <form method="post" action="InputGuru.php">
+
+        <div class="form-group">
+            <label>NIP</label>
+            <input type="text" name="nip" required>
+        </div>
+
+        <div class="form-group">
+            <label>Nama Guru</label>
+            <textarea name="nama" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Keahlian</label>
+            <input type="text" name="keahlian" required>
+        </div>
+
+        <div class="form-group">
+            <label>Keterangan</label>
+            <input type="text" name="keterangan">
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="btn-submit">Simpan</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
